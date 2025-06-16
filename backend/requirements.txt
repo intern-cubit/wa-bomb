@@ -1,0 +1,12 @@
+flask
+selenium
+pandas
+webdriver-manager
+flask-cors
+pybase64
+fastapi
+uvicorn[standard]
+pandas
+selenium
+webdriver-manager
+python-multipart
