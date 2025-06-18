@@ -1,6 +1,6 @@
 {
     "name": "wa-bomb",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "main": "main.js",
     "scripts": {
         "start": "electron .",
@@ -51,8 +51,7 @@
         ],
         "win": {
             "target": "nsis",
-            "icon": "build/icon.ico",
-            "publisher": "Obzen Technolabs"
+            "icon": "build/icon.ico"
         },
         "nsis": {
             "installerIcon": "build/installerIcon.ico",
