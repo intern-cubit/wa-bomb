@@ -15,6 +15,10 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from contextlib import asynccontextmanager
 import logging
+from appdirs import user_data_dir
+
+APP_AUTHOR = "YourCompany"
+APP_NAME = "CampaignFlow"
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO) # Set default level for this module's logger
@@ -64,19 +68,16 @@ if os.name == 'nt': # Check if the operating system is Windows
 else: # For other OS (Linux/macOS), use XDG_DATA_HOME or a fallback in user home
     app_data_dir = os.getenv('XDG_DATA_HOME', os.path.join(os.path.expanduser('~'), '.local', 'share'))
 
-# Create an application-specific directory within AppData
-APP_NAME_DIR = "mailstorm" # Use your application's name
+APP_NAME_DIR = "mailstorm" 
 APP_DATA_PATH = os.path.join(app_data_dir, APP_NAME_DIR)
 
-# Ensure the application data directory exists
 try:
     os.makedirs(APP_DATA_PATH, exist_ok=True)
     logger.info(f"Ensured application data directory exists: {APP_DATA_PATH}")
 except OSError as e:
     logger.critical(f"CRITICAL ERROR: Could not create application data directory {APP_DATA_PATH}: {e}")
-    sys.exit(1) # Exit if essential directory cannot be created
+    sys.exit(1) 
 
-# Define the full path to the activation file
 ACTIVATION_FILE = os.path.join(APP_DATA_PATH, "whatsapp-activation.txt")
 
 
@@ -257,6 +258,31 @@ async def check_activation_endpoint():
         is_activated = False
 
     return {"isActivated": is_activated, "message": "System is activated." if is_activated else "System is not activated."}
+
+USER_DATA_DIR = os.path.join(user_data_dir(APP_NAME, APP_AUTHOR), "selenium_profile")
+
+@app.post("/logout")
+async def logout_endpoint():
+    if os.path.exists(ACTIVATION_FILE):
+        try:
+            os.remove(ACTIVATION_FILE)
+            logger.info(f"Activation file '{ACTIVATION_FILE}' deleted successfully for logout.")
+        except OSError as e:
+            logger.error(f"Error deleting activation file '{ACTIVATION_FILE}' during logout: {e}")
+    else:
+        logger.info("Logout requested, but no activation file found.")
+
+    if os.path.exists(USER_DATA_DIR):
+        try:
+            shutil.rmtree(USER_DATA_DIR)
+            logger.info(f"Selenium user data directory '{USER_DATA_DIR}' cleared successfully.")
+        except OSError as e:
+            logger.error(f"Error clearing Selenium user data directory '{USER_DATA_DIR}': {e}")
+            raise HTTPException(status_code=500, detail=f"Failed to clear WhatsApp session data: {e}")
+    else:
+        logger.info(f"Selenium user data directory '{USER_DATA_DIR}' not found, no WhatsApp session to clear.")
+
+    return JSONResponse(content={"success": True, "message": "Logged out successfully. WhatsApp session data cleared."})
 
 @app.post("/preview-csv")
 async def preview_csv_endpoint(

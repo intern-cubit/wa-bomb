@@ -4,6 +4,7 @@ import Dashboard from './pages/Dashboard'
 import './index.css' // Assuming you have a basic CSS file for Tailwind or global styles
 import { Info } from 'lucide-react';
 import SystemActivation from './pages/SystemActivation';
+import Header from './components/Header';
 
 export default function App() {
     const [isActivated, setIsActivated] = useState(null);
@@ -44,12 +45,15 @@ export default function App() {
     }
 
     return (
-        <ThemeProvider>
-            {isActivated ? (
-                <Dashboard />
-            ) : (
-                <SystemActivation onActivationSuccess={() => setIsActivated(true)} />
-            )}
+        <ThemeProvider >
+            <div className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-blue-50 dark:from-[#111827] dark:via-black dark:to-[#10151b] text-gray-900 dark:text-white transition-colors duration-500">
+                <Header />
+                {isActivated ? (
+                    <Dashboard />
+                ) : (
+                    <SystemActivation onActivationSuccess={() => setIsActivated(true)} />
+                )}
+            </div>
         </ThemeProvider>
     );
 }
