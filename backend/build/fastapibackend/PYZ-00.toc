@@ -8286,6 +8286,34 @@
    'D:\\Codes\\CuBIT '
    'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\tzdata\\zoneinfo\\US\\__init__.py',
    'PYMODULE'),
+  ('undetected_chromedriver',
+   'D:\\Codes\\CuBIT '
+   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\undetected_chromedriver\\__init__.py',
+   'PYMODULE'),
+  ('undetected_chromedriver.cdp',
+   'D:\\Codes\\CuBIT '
+   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\undetected_chromedriver\\cdp.py',
+   'PYMODULE'),
+  ('undetected_chromedriver.dprocess',
+   'D:\\Codes\\CuBIT '
+   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\undetected_chromedriver\\dprocess.py',
+   'PYMODULE'),
+  ('undetected_chromedriver.options',
+   'D:\\Codes\\CuBIT '
+   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\undetected_chromedriver\\options.py',
+   'PYMODULE'),
+  ('undetected_chromedriver.patcher',
+   'D:\\Codes\\CuBIT '
+   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\undetected_chromedriver\\patcher.py',
+   'PYMODULE'),
+  ('undetected_chromedriver.reactor',
+   'D:\\Codes\\CuBIT '
+   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\undetected_chromedriver\\reactor.py',
+   'PYMODULE'),
+  ('undetected_chromedriver.webelement',
+   'D:\\Codes\\CuBIT '
+   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\undetected_chromedriver\\webelement.py',
+   'PYMODULE'),
   ('unittest',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\unittest\\__init__.py',
@@ -8677,74 +8705,6 @@
   ('webbrowser',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\webbrowser.py',
-   'PYMODULE'),
-  ('webdriver_manager',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\__init__.py',
-   'PYMODULE'),
-  ('webdriver_manager.chrome',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\chrome.py',
-   'PYMODULE'),
-  ('webdriver_manager.core',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\core\\__init__.py',
-   'PYMODULE'),
-  ('webdriver_manager.core.archive',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\core\\archive.py',
-   'PYMODULE'),
-  ('webdriver_manager.core.config',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\core\\config.py',
-   'PYMODULE'),
-  ('webdriver_manager.core.constants',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\core\\constants.py',
-   'PYMODULE'),
-  ('webdriver_manager.core.download_manager',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\core\\download_manager.py',
-   'PYMODULE'),
-  ('webdriver_manager.core.driver',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\core\\driver.py',
-   'PYMODULE'),
-  ('webdriver_manager.core.driver_cache',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\core\\driver_cache.py',
-   'PYMODULE'),
-  ('webdriver_manager.core.file_manager',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\core\\file_manager.py',
-   'PYMODULE'),
-  ('webdriver_manager.core.http',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\core\\http.py',
-   'PYMODULE'),
-  ('webdriver_manager.core.logger',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\core\\logger.py',
-   'PYMODULE'),
-  ('webdriver_manager.core.manager',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\core\\manager.py',
-   'PYMODULE'),
-  ('webdriver_manager.core.os_manager',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\core\\os_manager.py',
-   'PYMODULE'),
-  ('webdriver_manager.core.utils',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\core\\utils.py',
-   'PYMODULE'),
-  ('webdriver_manager.drivers',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\drivers\\__init__.py',
-   'PYMODULE'),
-  ('webdriver_manager.drivers.chrome',
-   'D:\\Codes\\CuBIT '
-   'Internship\\whatsapp_marketing\\whatsapp-automation-app\\backend\\.venv\\Lib\\site-packages\\webdriver_manager\\drivers\\chrome.py',
    'PYMODULE'),
   ('websocket',
    'D:\\Codes\\CuBIT '
